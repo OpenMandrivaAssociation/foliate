@@ -33,10 +33,10 @@ sed -i -e '1s/python$/python3/' src/assets/KindleUnpack/*.py
 
 %build
 %meson
-%ninja_build
+%ninja -C build
 
 %install
-%ninja_install
+%ninja -C build install
 
 pushd %{buildroot}%{_bindir}
 ln -s com.github.johnfactotum.Foliate foliate
