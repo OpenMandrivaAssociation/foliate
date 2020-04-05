@@ -52,5 +52,6 @@ popd
 %{_datadir}/foliate/com.github.johnfactotum.Foliate.src.gresource
 %{_datadir}/glib-2.0/schemas/com.github.johnfactotum.Foliate.gschema.xml
 %{_datadir}/foliate/assets/*
+%{_datadir}/foliate/assets/.eslintrc.json
 %{_iconsdir}/hicolor/*/apps/com.github.johnfactotum.Foliate*.svg
 %{_datadir}/metainfo/com.github.johnfactotum.Foliate.appdata.xml
