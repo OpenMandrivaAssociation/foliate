@@ -48,7 +48,7 @@ popd
 %{_bindir}/foliate
 %{_bindir}/com.github.johnfactotum.Foliate
 %{_datadir}/applications/com.github.johnfactotum.Foliate.desktop
-%{_datadir}/com.github.johnfactotum.Foliate/
+#{_datadir}/com.github.johnfactotum.Foliate/
 %{_datadir}/glib-2.0/schemas/com.github.johnfactotum.Foliate.gschema.xml
 %{_iconsdir}/hicolor/*/apps/com.github.johnfactotum.Foliate*.svg
 %{_datadir}/metainfo/com.github.johnfactotum.Foliate.appdata.xml
