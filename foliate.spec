@@ -32,11 +32,12 @@ sed -i -e '1s/python$/python3/' src/assets/KindleUnpack/*.py
 %autopatch -p1
 
 %build
-%meson
-%ninja -C build
+%meson -G Ninja
+
+%ninja_build -C build
 
 %install
-%ninja -C build install
+%ninja_install -C build
 
 pushd %{buildroot}%{_bindir}
 ln -s com.github.johnfactotum.Foliate foliate
