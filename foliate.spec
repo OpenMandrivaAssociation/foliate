@@ -1,5 +1,5 @@
 Name:           foliate
-Version:        1.5.3
+Version:        2.0.0
 Release:        1
 Summary:        A simple and modern GTK eBook reader
 Group:          Office/Utilities
