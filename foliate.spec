@@ -8,7 +8,6 @@ URL:            https://johnfactotum.github.io/foliate/
 Source0:        https://github.com/johnfactotum/foliate/archive/%{version}/%{name}-%{version}.tar.gz
 
 BuildRequires: gjs
-BuildRequires: ninja
 BuildRequires: meson
 BuildRequires: gettext
 BuildRequires: pkgconfig(libsoup-2.4)
@@ -32,12 +31,11 @@ sed -i -e '1s/python$/python3/' src/assets/KindleUnpack/*.py
 %autopatch -p1
 
 %build
-%meson -G Ninja
-
-%ninja_build -C build
+%meson
+%meson_build
 
 %install
-%ninja_install -C build
+%meson_install
 
 pushd %{buildroot}%{_bindir}
 ln -s com.github.johnfactotum.Foliate foliate
