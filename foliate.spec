@@ -1,5 +1,5 @@
 Name:           foliate
-Version:        2.2.1
+Version:        2.3.0
 Release:        1
 Summary:        A simple and modern GTK eBook reader
 Group:          Office/Utilities
@@ -12,14 +12,17 @@ BuildRequires: meson
 BuildRequires: gettext
 BuildRequires: pkgconfig(libsoup-2.4)
 BuildRequires: pkgconfig(webkit2gtk-4.0)
+BuildReqiores: pkgconfig(iso-codes)
 
 Requires: gjs
 Requires: webkit2
 # Needed for mobipocket (.mobi) and Kindle File Format (.azw, .azw3)
 Requires: python
+Requires: iso-codes
 # Optional for text-to-speech
 Recommends: espeak
 Recommends: gspell-i18n
+Recommends: noto-coloremoji-fonts
 
 %description
 A simple and modern GTK eBook viewer, built with GJS and Epub.js.
