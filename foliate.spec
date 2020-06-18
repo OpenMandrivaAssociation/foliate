@@ -12,7 +12,7 @@ BuildRequires: meson
 BuildRequires: gettext
 BuildRequires: pkgconfig(libsoup-2.4)
 BuildRequires: pkgconfig(webkit2gtk-4.0)
-BuildReqiores: pkgconfig(iso-codes)
+BuildRequires: pkgconfig(iso-codes)
 
 Requires: gjs
 Requires: webkit2
