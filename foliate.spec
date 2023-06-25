@@ -2,7 +2,7 @@
 
 Name:           foliate
 Version:        2.6.4
-Release:        2
+Release:        3
 Summary:        A simple and modern GTK eBook reader
 Group:          Office/Utilities
 License:        GPLv3
@@ -17,7 +17,7 @@ BuildRequires: pkgconfig(webkit2gtk-4.0)
 BuildRequires: pkgconfig(iso-codes)
 
 Requires: gjs
-Requires: webkit2
+Requires: webkit4
 # Needed for mobipocket (.mobi) and Kindle File Format (.azw, .azw3)
 Requires: python
 Requires: iso-codes
