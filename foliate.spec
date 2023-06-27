@@ -9,12 +9,13 @@ License:        GPLv3
 URL:            https://johnfactotum.github.io/foliate/
 Source0:        https://github.com/johnfactotum/foliate/archive/%{version}/%{name}-%{version}.tar.gz
 
-BuildRequires: gjs
-BuildRequires: meson
-BuildRequires: gettext
-BuildRequires: pkgconfig(libsoup-2.4)
-BuildRequires: pkgconfig(webkit2gtk-4.0)
-BuildRequires: pkgconfig(iso-codes)
+BuildRequires:	gjs
+BuildRequires:	meson
+BuildRequires:	gettext
+BuildRequires:	pkgconfig(libsoup-2.4)
+BuildRequires:	pkgconfig(webkit2gtk-4.0)
+BuildRequires:	pkgconfig(iso-codes)
+BuildRequires:	xdg-dbus-proxy
 
 Requires: gjs
 Requires: webkit4
