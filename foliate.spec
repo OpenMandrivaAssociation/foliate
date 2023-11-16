@@ -9,7 +9,7 @@ License:        GPLv3
 URL:            https://johnfactotum.github.io/foliate/
 Source0:        https://github.com/johnfactotum/foliate/archive/%{version}/%{name}-%{version}.tar.gz
 # Needed submodule
-Source1:        https://github.com/johnfactotum/foliate-js/archive/f75fbba096e8fc1c775ea1c162fe1d3322cd5121.tar.gz
+Source1:        https://github.com/johnfactotum/foliate-js/archive/foliate-js-f75fbba096e8fc1c775ea1c162fe1d3322cd5121.tar.gz
 
 BuildRequires:	gjs
 BuildRequires:	meson
