@@ -1,19 +1,23 @@
 %global debug_package %{nil}
 
 Name:           foliate
-Version:        2.6.4
-Release:        6
+Version:        3.0.0
+Release:        1
 Summary:        A simple and modern GTK eBook reader
 Group:          Office/Utilities
 License:        GPLv3
 URL:            https://johnfactotum.github.io/foliate/
 Source0:        https://github.com/johnfactotum/foliate/archive/%{version}/%{name}-%{version}.tar.gz
+# Needed submodule
+Source1:        https://github.com/johnfactotum/foliate-js/archive/f75fbba096e8fc1c775ea1c162fe1d3322cd5121.tar.gz
 
 BuildRequires:	gjs
 BuildRequires:	meson
 BuildRequires:	gettext
-BuildRequires:	pkgconfig(libsoup-2.4)
-BuildRequires:	pkgconfig(webkit2gtk-4.0)
+BuildRequires:  pkgconfig(gtk4)
+BuildRequires:	pkgconfig(libsoup-3.0)
+BuildRequires:  pkgconfig(libadwaita-1)
+BuildRequires:	pkgconfig(webkitgtk-6.0)
 BuildRequires:	pkgconfig(iso-codes)
 BuildRequires:	xdg-dbus-proxy
 
@@ -26,6 +30,8 @@ Requires: iso-codes
 Recommends: espeak
 Recommends: gspell-i18n
 Recommends: noto-coloremoji-fonts
+
+Provides:       bundled(%{name}-js)
 
 %description
 A simple and modern GTK eBook viewer, built with GJS and Epub.js.
