@@ -21,6 +21,7 @@ BuildRequires:  pkgconfig(libadwaita-1)
 BuildRequires:	pkgconfig(webkitgtk-6.0)
 BuildRequires:	pkgconfig(iso-codes)
 BuildRequires:	xdg-dbus-proxy
+BuildRequires:  locales-extra-charsets
 
 Requires: gjs
 Requires: typelib(WebKit) = 6.0
