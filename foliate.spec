@@ -12,6 +12,7 @@ Source0:        https://github.com/johnfactotum/foliate/archive/%{version}/%{nam
 Source1:        https://github.com/johnfactotum/foliate-js/archive/foliate-js-f75fbba096e8fc1c775ea1c162fe1d3322cd5121.tar.gz
 
 BuildRequires:	gjs
+BuildRequires:  pkgconfig(gjs-1.0)
 BuildRequires:	meson
 BuildRequires:	gettext
 BuildRequires:  pkgconfig(gtk4)
@@ -22,7 +23,8 @@ BuildRequires:	pkgconfig(iso-codes)
 BuildRequires:	xdg-dbus-proxy
 
 Requires: gjs
-Requires: typelib(WebKit2) = 4.0
+Requires: typelib(WebKit) = 6.0
+Requires: %{_lib}webkit2gtk-gir6.0
 # Needed for mobipocket (.mobi) and Kindle File Format (.azw, .azw3)
 Requires: python
 Requires: iso-codes
