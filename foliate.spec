@@ -37,10 +37,8 @@ Provides:       bundled(%{name}-js)
 A simple and modern GTK eBook viewer, built with GJS and Epub.js.
 
 %prep
-%setup -q
-2to3 --write --nobackups --no-diffs src/assets/KindleUnpack/mobiml2xhtml.py
-sed -i -e '1s/python$/python3/' src/assets/KindleUnpack/*.py
-%autopatch -p1
+%autosetup -p1 -a1            
+mv %{name}-js-* src/%{name}-js
 
 %build
 %meson
