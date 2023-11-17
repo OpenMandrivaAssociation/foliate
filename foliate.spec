@@ -11,6 +11,7 @@ Source0:        https://github.com/johnfactotum/foliate/archive/%{version}/%{nam
 # Needed submodule
 Source1:        https://github.com/johnfactotum/foliate-js/archive/foliate-js-f75fbba096e8fc1c775ea1c162fe1d3322cd5121.tar.gz
 
+BuildRequires:  appstream-util
 BuildRequires:	gjs
 BuildRequires:  pkgconfig(gjs-1.0)
 BuildRequires:	meson
