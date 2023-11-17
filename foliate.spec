@@ -41,6 +41,8 @@ Provides:       bundled(%{name}-js)
 A simple and modern GTK eBook viewer, built with GJS and Epub.js.
 
 %prep
+	
+%autosetup -p1
 %autosetup -p1 -a1            
 mv %{name}-js-* src/%{name}-js
 
