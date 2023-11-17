@@ -44,6 +44,8 @@ A simple and modern GTK eBook viewer, built with GJS and Epub.js.
 mv %{name}-js-* src/%{name}-js
 
 %build
+export CC=gcc
+export CXX=g++
 %meson
 %meson_build
 
