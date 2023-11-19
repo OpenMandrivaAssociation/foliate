@@ -64,7 +64,7 @@ export CXX=g++
 %files -f com.github.johnfactotum.Foliate.lang
 %doc README.md COPYING
 %{_bindir}/foliate
-%{_bindir}/com.github.johnfactotum.Foliate
+#{_bindir}/com.github.johnfactotum.Foliate
 %{_datadir}/applications/com.github.johnfactotum.Foliate.desktop
 %{_datadir}/com.github.johnfactotum.Foliate/*
 %{_datadir}/glib-2.0/schemas/com.github.johnfactotum.Foliate.gschema.xml
