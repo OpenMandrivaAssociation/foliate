@@ -55,9 +55,9 @@ export CXX=g++
 %install
 %meson_install
 
-pushd %{buildroot}%{_bindir}
-ln -s com.github.johnfactotum.Foliate foliate
-popd
+#pushd %{buildroot}%{_bindir}
+#ln -s com.github.johnfactotum.Foliate foliate
+#popd
 
 %find_lang com.github.johnfactotum.Foliate
 
