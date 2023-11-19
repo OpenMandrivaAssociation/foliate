@@ -7,9 +7,11 @@ Summary:        A simple and modern GTK eBook reader
 Group:          Office/Utilities
 License:        GPLv3
 URL:            https://johnfactotum.github.io/foliate/
-Source0:        https://github.com/johnfactotum/foliate/archive/%{version}/%{name}-%{version}.tar.gz
+# Foliate devs need to unserstand that internal submodules, should be released together with the main project as example in tarball.
+Source0:	foliate-3.0.0.tar.bz2
+#Source0:        https://github.com/johnfactotum/foliate/archive/%{version}/%{name}-%{version}.tar.gz
 # Needed submodule
-Source1:        https://github.com/johnfactotum/foliate-js/archive/foliate-js-f75fbba096e8fc1c775ea1c162fe1d3322cd5121.tar.gz
+#Source1:        https://github.com/johnfactotum/foliate-js/archive/foliate-js-f75fbba096e8fc1c775ea1c162fe1d3322cd5121.tar.gz
 
 BuildRequires:  appstream-util
 BuildRequires:	gjs
@@ -43,8 +45,6 @@ A simple and modern GTK eBook viewer, built with GJS and Epub.js.
 %prep
 	
 %autosetup -p1
-%autosetup -p1 -a1            
-mv %{name}-js-* src/%{name}-js
 
 %build
 export CC=gcc
