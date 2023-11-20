@@ -1,0 +1,11 @@
+diff -uraN foliate-3.0.1/src/app.js omv-foliate-3.0.1/src/app.js
+--- foliate-3.0.1/src/app.js	2023-11-20 13:57:24.000000000 +0100
++++ omv-foliate-3.0.1/src/app.js	2023-11-20 14:17:43.821390232 +0100
+@@ -31,7 +31,6 @@
+ - Foliate ${pkg.version}
+ - GJS ${getGJSVersion()}
+ - GTK ${getImportVersion(Gtk)}
+-- Adwaita ${getImportVersion(imports.gi.Adw)}
+ - GLib ${getImportVersion(GLib)}
+ - WebKitGTK ${getImportVersion(WebKit)}
+ 
