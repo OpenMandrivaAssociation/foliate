@@ -30,6 +30,8 @@ BuildRequires:  locales-extra-charsets
 Requires: gjs
 Requires: typelib(WebKit) = 6.0
 Requires: %{_lib}webkit2gtk-gir6.0
+Requires: %{_lib}adwaita-gir1
+Requires: xdg-dbus-proxy
 # Needed for mobipocket (.mobi) and Kindle File Format (.azw, .azw3)
 Requires: python
 Requires: iso-codes
