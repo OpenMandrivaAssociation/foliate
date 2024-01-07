@@ -1,7 +1,7 @@
 %global debug_package %{nil}
 
 Name:           foliate
-Version:        3.0.1
+Version:        3.0.2
 Release:        1
 Summary:        A simple and modern GTK eBook reader
 Group:          Office/Utilities
