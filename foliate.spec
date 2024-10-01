@@ -2,7 +2,7 @@
 
 Name:           foliate
 Version:        3.1.1
-Release:        1
+Release:        2
 Summary:        A simple and modern GTK eBook reader
 Group:          Office/Utilities
 License:        GPLv3
