@@ -8,13 +8,12 @@ Group:          Office/Utilities
 License:        GPLv3
 URL:            https://johnfactotum.github.io/foliate/
 # Foliate devs need to unserstand that internal submodules, should be released together with the main project as example in tarball.
-Source0:	foliate-3.2.0.tar.bz3
+Source0:	foliate-3.2.0.tar.xz
 #Source0:        https://github.com/johnfactotum/foliate/archive/%{version}/%{name}-%{version}.tar.gz
 # Needed submodule
 #Source1:        https://github.com/johnfactotum/foliate-js/archive/foliate-js-f75fbba096e8fc1c775ea1c162fe1d3322cd5121.tar.gz
 Patch0:		fix-typelib.patch
 
-BuildRequires:	bzip3
 BuildRequires:  appstream-util
 BuildRequires:	gjs
 BuildRequires:  pkgconfig(gjs-1.0)
